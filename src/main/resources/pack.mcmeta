@@ -1,6 +1,10 @@
 {
   "pack": {
-    "pack_format": 15,
-    "description": "Dullahan Mod Resources"
+    "description": "${mod_id} resources",
+    "max_format": 94,
+    "min_format": [
+      94,
+      1
+    ]
   }
 }
