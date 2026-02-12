@@ -21,19 +21,17 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-          cache: gradle
 
-      - name: Make Gradle wrapper executable
-        run: chmod +x gradlew
+      - name: Install Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.4
 
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@v2
-
-      - name: Build mod (includes reobfJar)
-        run: ./gradlew build --no-daemon
+      - name: Build mod
+        run: gradle build --no-daemon
 
       - name: Publish to GitHub Packages
-        run: ./gradlew publish --no-daemon
+        run: gradle publish --no-daemon
         env:
           USERNAME: ${{ github.actor }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
