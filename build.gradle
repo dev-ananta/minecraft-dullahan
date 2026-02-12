@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1+'
 }
 
-version = System.getenv("GITHUB_REF_NAME") ?: "dev"
+version = "1.0.0"
 group = 'com.dev-ananta.dullahan'
 archivesBaseName = 'dullahan'
 
@@ -111,4 +111,11 @@ publishing {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("META-INF/mods.toml") {
+        expand "file": [jarVersion: project.version]
+    }
 }
