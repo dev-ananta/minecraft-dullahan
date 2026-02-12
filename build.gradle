@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1+'
 }
 
-version = '1.0.0'
+version = System.getenv("GITHUB_REF_NAME") ?: "dev"
 group = 'com.mymod.dullahan'
 archivesBaseName = 'dullahan'
 
@@ -87,15 +87,27 @@ jar.finalizedBy('reobfJar')
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifact jar
+            artifact tasks.reobfJar
+
+            groupId = project.group
+            artifactId = archivesBaseName
+            version = project.version
         }
     }
+
     repositories {
         maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/dev-ananta/minecraft-dullahan")
+
+            credentials {
+                username = System.getenv("USERNAME")
+                password = System.getenv("TOKEN")
+            }
         }
     }
 }
+
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
