@@ -1,4 +1,4 @@
-package com.yourmod.dullahan.entity;
+package com.dullahan.dullahan.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

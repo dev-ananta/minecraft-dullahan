@@ -1,7 +1,7 @@
-package com.yourmod.dullahan.client.renderer;
+package com.dullahan.dullahan.client.renderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.yourmod.dullahan.entity.DullahanEntity;
+import com.dullahan.dullahan.entity.DullahanEntity;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -12,7 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class DullahanRenderer extends HumanoidMobRenderer<DullahanEntity, HumanoidModel<DullahanEntity>> {
     private static final ResourceLocation DULLAHAN_TEXTURE = 
-        new ResourceLocation("yourmod", "textures/entity/dullahan.png");
+        new ResourceLocation("dullahan", "textures/entity/dullahan.png");
 
     public DullahanRenderer(EntityRendererProvider.Context context) {
         super(context, new HumanoidModel<>(context.bakeLayer(ModelLayers.PLAYER)), 0.5F);

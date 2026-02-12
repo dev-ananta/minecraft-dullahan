@@ -5,7 +5,7 @@ plugins {
 }
 
 version = System.getenv("GITHUB_REF_NAME") ?: "dev"
-group = 'com.mymod.dullahan'
+group = 'com.dev-ananta.dullahan'
 archivesBaseName = 'dullahan'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)

@@ -1,7 +1,7 @@
-package com.yourmod.dullahan.init;
+package com.dullahan.dullahan.init;
 
-import com.yourmod.dullahan.DullahanMod;
-import com.yourmod.dullahan.entity.DullahanEntity;
+import com.dullahan.dullahan.DullahanMod;
+import com.dullahan.dullahan.entity.DullahanEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;

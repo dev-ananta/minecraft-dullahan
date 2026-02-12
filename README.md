@@ -34,7 +34,7 @@ A custom Minecraft Forge mod that adds the **Dullahan**, a powerful undead boss 
 
 ```
 src/main/
-├── java/com/yourmod/dullahan/
+├── java/com/dullahan/dullahan/
 │   ├── DullahanMod.java              # Main mod class
 │   ├── entity/
 │   │   ├── DullahanEntity.java        # Boss entity logic

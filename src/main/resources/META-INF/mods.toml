@@ -4,12 +4,12 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="dullahan"
-version="1.0.0"
+version="${file.jarVersion}"
 displayName="Dullahan Boss Mod"
 description='''
 Adds the Dullahan, a powerful undead boss mob that wields a netherite sword and can summon lightning.
 '''
-authors="YourName"
+authors="Ananta the Developer"
 
 [[dependencies.dullahan]]
     modId="forge"

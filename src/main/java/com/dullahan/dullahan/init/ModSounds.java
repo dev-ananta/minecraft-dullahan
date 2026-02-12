@@ -1,6 +1,6 @@
-package com.yourmod.dullahan.init;
+package com.dullahan.dullahan.init;
 
-import com.yourmod.dullahan.DullahanMod;
+import com.dullahan.dullahan.DullahanMod;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;

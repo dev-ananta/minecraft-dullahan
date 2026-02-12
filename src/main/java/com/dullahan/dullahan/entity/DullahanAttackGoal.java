@@ -1,4 +1,4 @@
-package com.yourmod.dullahan.entity;
+package com.dullahan.dullahan.entity;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;

@@ -1,9 +1,9 @@
-package com.yourmod.dullahan;
+package com.dullahan.dullahan;
 
 import com.mojang.logging.LogUtils;
-import com.yourmod.dullahan.entity.DullahanEntity;
-import com.yourmod.dullahan.init.ModEntities;
-import com.yourmod.dullahan.init.ModSounds;
+import com.dullahan.dullahan.entity.DullahanEntity;
+import com.dullahan.dullahan.init.ModEntities;
+import com.dullahan.dullahan.init.ModSounds;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.levelgen.Heightmap;

@@ -1,8 +1,8 @@
-package com.yourmod.dullahan.client;
+package com.dullahan.dullahan.client;
 
-import com.yourmod.dullahan.DullahanMod;
-import com.yourmod.dullahan.client.renderer.DullahanRenderer;
-import com.yourmod.dullahan.init.ModEntities;
+import com.dullahan.dullahan.DullahanMod;
+import com.dullahan.dullahan.client.renderer.DullahanRenderer;
+import com.dullahan.dullahan.init.ModEntities;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

@@ -4,7 +4,7 @@ This guide will help you set up and integrate all the provided files into a work
 
 ## Quick Start
 
-### Step 1: Organize Your Files
+### Step 1: Organize The Files
 
 Create the following directory structure:
 
@@ -19,7 +19,7 @@ DullahanMod/
     └── main/
         ├── java/
         │   └── com/
-        │       └── yourmod/
+        │       └── dullahan/
         │           └── dullahan/
         │               ├── DullahanMod.java
         │               ├── entity/
@@ -61,13 +61,13 @@ DullahanMod/
 
 Copy the Java files to their respective directories:
 
-1. **DullahanMod.java** → `src/main/java/com/yourmod/dullahan/`
-2. **DullahanEntity.java** → `src/main/java/com/yourmod/dullahan/entity/`
-3. **DullahanAttackGoal.java** → `src/main/java/com/yourmod/dullahan/entity/`
-4. **DullahanRenderer.java** → `src/main/java/com/yourmod/dullahan/client/renderer/`
-5. **ClientEvents.java** → `src/main/java/com/yourmod/dullahan/client/`
-6. **ModEntities.java** → `src/main/java/com/yourmod/dullahan/init/`
-7. **ModSounds.java** → `src/main/java/com/yourmod/dullahan/init/`
+1. **DullahanMod.java** → `src/main/java/com/dullahan/dullahan/`
+2. **DullahanEntity.java** → `src/main/java/com/dullahan/dullahan/entity/`
+3. **DullahanAttackGoal.java** → `src/main/java/com/dullahan/dullahan/entity/`
+4. **DullahanRenderer.java** → `src/main/java/com/dullahan/dullahan/client/renderer/`
+5. **ClientEvents.java** → `src/main/java/com/dullahan/dullahan/client/`
+6. **ModEntities.java** → `src/main/java/com/dullahan/dullahan/init/`
+7. **ModSounds.java** → `src/main/java/com/dullahan/dullahan/init/`
 
 ### Step 3: Place Resource Files
 
@@ -138,7 +138,7 @@ rootProject.name = 'dullahan'
 ### Step 7: Build the Mod
 
 ```bash
-# Navigate to your mod directory
+# Navigate to the mod directory
 cd DullahanMod
 
 # Make gradlew executable (Linux/Mac)
