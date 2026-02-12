@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 name: Forge Mod Build
+=======
+name: Build Forge Mod
+>>>>>>> 6007c716f08ca8c34a0ecc9527c73ba4cc531823
 
 on:
   push:
     branches: [ "main" ]
+<<<<<<< HEAD
   pull_request:
     branches: [ "main" ]
+=======
+>>>>>>> 6007c716f08ca8c34a0ecc9527c73ba4cc531823
   workflow_dispatch:
 
 jobs:
@@ -22,6 +29,7 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
+<<<<<<< HEAD
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
       with:
@@ -41,3 +49,16 @@ jobs:
       with:
         name: DullahanMod-Jar
         path: build/libs/*.jar
+=======
+      - name: Make Gradle executable
+        run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew clean build
+
+      - name: Upload built JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: forge-mod
+          path: build/libs/*.jar
+>>>>>>> 6007c716f08ca8c34a0ecc9527c73ba4cc531823
