@@ -1,5 +1,9 @@
 name: Forge Mod Build
 
+permissions:
+  contents: read
+  packages: write
+
 on:
   push:
     branches: [ "main" ]
@@ -33,3 +37,8 @@ jobs:
         with:
           name: DullahanMod-Jar
           path: build/libs/*.jar
+      
+      - name: Publish
+        run: ./gradlew publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
