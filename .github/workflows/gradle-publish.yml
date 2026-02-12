@@ -1,16 +1,13 @@
-name: Build and Publish Mod
+name: Build Forge Mod
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      packages: write
 
     steps:
       - name: Checkout repository
@@ -22,16 +19,14 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Install Gradle
-        uses: gradle/actions/setup-gradle@v4
+      - name: Make Gradle executable
+        run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew clean build
+
+      - name: Upload built JAR
+        uses: actions/upload-artifact@v4
         with:
-          gradle-version: 8.4
-
-      - name: Build mod
-        run: gradle build --no-daemon
-
-      - name: Publish to GitHub Packages
-        run: gradle publish --no-daemon
-        env:
-          USERNAME: ${{ github.actor }}
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: forge-mod
+          path: build/libs/*.jar
