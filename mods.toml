@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="dullahan"
+version="1.0.0"
+displayName="Dullahan Boss Mod"
+description='''
+Adds the Dullahan, a powerful undead boss mob that wields a netherite sword and can summon lightning.
+'''
+authors="YourName"
+
+[[dependencies.dullahan]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dullahan]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"

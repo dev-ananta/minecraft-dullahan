@@ -1,0 +1,46 @@
+{
+  "dullahan_ambient": {
+    "subtitle": "subtitles.entity.dullahan.ambient",
+    "sounds": [
+      {
+        "name": "dullahan:entity/dullahan/ambient",
+        "volume": 1.0,
+        "pitch": 1.0,
+        "stream": false
+      }
+    ]
+  },
+  "dullahan_hurt": {
+    "subtitle": "subtitles.entity.dullahan.hurt",
+    "sounds": [
+      {
+        "name": "dullahan:entity/dullahan/hurt",
+        "volume": 1.0,
+        "pitch": 1.0,
+        "stream": false
+      }
+    ]
+  },
+  "dullahan_death": {
+    "subtitle": "subtitles.entity.dullahan.death",
+    "sounds": [
+      {
+        "name": "dullahan:entity/dullahan/death",
+        "volume": 1.0,
+        "pitch": 1.0,
+        "stream": false
+      }
+    ]
+  },
+  "dullahan_spawn": {
+    "subtitle": "subtitles.entity.dullahan.spawn",
+    "sounds": [
+      {
+        "name": "dullahan:entity/dullahan/spawn",
+        "volume": 1.5,
+        "pitch": 0.9,
+        "stream": false
+      }
+    ]
+  }
+}
